@@ -72,7 +72,9 @@ Estimativa baseada no mercado comercial brasileiro e na Região Metropolitana de
 ## 7. Engenharia de Prompt e Vibe Coding (IA como Co-Founder)
 
 ### Mega Prompt Inicial (Lovable)
-> *(# Projeto: ClimaFix — Assinatura de Manutenção Preventiva de Ar-Condicionado (B2B)
+
+```text
+# Projeto: ClimaFix — Assinatura de Manutenção Preventiva de Ar-Condicionado (B2B)
 
 Atue como um Product Designer e Engenheiro Full-Stack Sênior. Crie um MVP completo, moderno e responsivo para o ClimaFix, um serviço de assinatura mensal de manutenção preventiva de ar-condicionado focado em clínicas, consultórios, academias e escritórios.
 
@@ -86,13 +88,14 @@ Ative e use o Lovable Cloud para persistência de dados (tabelas de leads, clien
 - Header com logo ClimaFix, links âncora e botão "Área do Técnico" (/admin).
 - Hero Section com proposta de valor voltada para conformidade sanitária (PMOC), eficiência energética e zero paradas no calor.
 - Simulador Interativo de Assinatura: seleção de tipo de estabelecimento, quantidade de aparelhos (Split Hi-Wall R$ 69/mês, Cassete/Piso-Teto R$ 119/mês, ACJ R$ 55/mês), frequência (Mensal 1.0x, Bimestral -15%, Trimestral -25%) e dados de contato.
-- Ao submeter: salva na tabela leads como "Novo Lead" e abre modal com botão "Fechar Plano no WhatsApp" (https://wa.me/5531999999999?text=...) enviando o resumo estruturado do orçamento.
+- Ao submeter: salva na tabela leads como "Novo Lead" e abre modal com botão "Fechar Plano no WhatsApp" ([https://wa.me/5531999999999?text=](https://wa.me/5531999999999?text=)...) enviando o resumo estruturado do orçamento.
 
 3. Painel de Administração (/admin):
 - Protegido por login via Lovable Cloud, com 3 abas:
   - Dashboard e Leads: métricas (leads no mês, clientes ativos, MRR, visitas na semana), lista de leads, botão de WhatsApp e botão "Converter em Cliente Ativo" com 1 clique.
   - Clientes Ativos: gestão de assinantes, status da próxima manutenção e observações técnicas.
-  - Agenda de Visitas: lista cronológica com botão "Concluir Manutenção" que recalcula automaticamente o próximo ciclo preventivo (30, 60 ou 90 dias).)*
+  - Agenda de Visitas: lista cronológica com botão "Concluir Manutenção" que recalcula automaticamente o próximo ciclo preventivo (30, 60 ou 90 dias).
+```
 
 ### Validação e Ajustes Aplicados
 - **Teste de Fluxo Externo (WhatsApp):** Identificado bloqueio de `X-Frame-Options` (`api.whatsapp.com`) ao testar dentro do iframe de preview do Lovable; validado em aba externa (`target="_blank"`), confirmando o envio automático dos dados estruturados do orçamento para o WhatsApp.
